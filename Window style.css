@@ -1,0 +1,44 @@
+*{
+    background-color: rgb(155, 9, 9);
+}
+
+.inner {
+    border: 2px solid rgb(49, 3, 3);
+    margin-top: 250px;
+    margin-left: 250px;
+    
+    background-color: rgb(22, 3, 3);
+    width: 900px;
+    
+    padding: 50px 0;
+    
+}
+
+#sl {
+    color: white;
+    background-color: rgb(22, 3, 3);
+    text-align: left;
+    font-size: large;
+    text-decoration: none;
+    margin-left: 55px;
+}
+
+
+#sl0 {
+    color: rgb(160, 7, 7);
+    background-color: rgb(22, 3, 3);
+    text-align: left;
+    font-size: large;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+
+#sl1 {
+    color: rgb(160, 7, 7);
+    background-color: rgb(22, 3, 3);
+    text-align: left;
+    font-size: large;
+    text-decoration: none;
+    margin-left: 55px;
+}
