@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Info</title>
+</head>
+<body>
+    <h1>Your Basic Info</h1>
+    <form action="">
+        <label for="name"><b>Name</b>
+            <br>
+            <input type="text" id="name">
+        </label>
+        <br>
+        <br>
+
+
+        <label for="email"><b>Email</b>
+            <br>
+            <input type="email" id="email">
+        </label>
+        <br>
+        <br>
+        
+        
+        <label for="password"><b>Password</b>
+            <br>
+            <input type="password" id="password">
+        </label>
+        <br>
+        <br>
+
+        <label for="age"><b>Age</b>
+            <br>
+            <input type="radio" id="u16" name="age">
+            <label for="u16">Under 16</label>
+            <br>
+            <input type="radio" id="16A" name="age">
+            <label for="16A">16 and Above</label>
+        </label>
+        <br>
+        <br>
+
+        <h1>Your Profile</h1>
+        <label for="biography"><b>Biography</b>
+            <br>
+            <textarea name="" id="biography" cols="30" rows="2"></textarea>
+        </label>
+        <br>
+        <br>
+
+        <label for="courses"><b>Courses</b></label>
+        <br>
+        <select name="" id="courses">
+            <option value="cse">Computer Science and Engineering</option>
+            <option value="cse">Electronics and Telecommunication</option>
+            <option value="cse">Civil Engineering</option>
+            <option value="cse">Electrical Engineering</option>
+            <option value="cse">Electronics Engineering</option>
+        </select>
+        <br>
+        <br>
+
+        <label for="interests"><b>Interests</b></label>
+        <br>
+        <input type="checkbox" id="engineering">
+        <label for="engineering">Engineering</label>
+        <br>
+        <input type="checkbox" id="bussiness">
+        <label for="bussiness">Bussiness</label>
+        <br>
+        <br>
+
+        <label for="car">Which car do you have?</label>
+
+        <br>
+        <input name="car" list="cars" id="car">
+        <datalist id="cars">
+            <option value="Maruti Suzuki"></option>
+            <option value="Hyundai"></option>
+            <option value="Honda"></option>
+            <option value="Skoda"></option>
+        </datalist>
+        <br>
+        <br>
+
+        <label for="work">Work Progress:</label>
+        <progress id="work" max="70" value="50">10%</progress>
+        <br>
+        <br>
+
+
+        <label for="fuel">Fuel Status:</label>
+        <meter id="fuel" min="0" max="100" low="40" high="70" optimum="50" value="100"></meter>
+        <br>
+        <br>
+
+        <button type="submit"><b>Submit</b></button>
+</body>
+</html>
