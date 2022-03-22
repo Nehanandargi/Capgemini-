@@ -1,0 +1,30 @@
+*{
+    background-color: white;
+    font-family: 'Smooch Sans', sans-serif;
+    
+    
+}
+
+.containeer {
+border: 1px solid rgb(231, 229, 229) ;
+background-color: rgb(231, 229, 229);
+display: flex;
+justify-content: space-between;
+padding: 10px 30px;
+
+}
+
+#title {
+    color: navy;
+    background-color: rgb(231, 229, 229);
+    font-size: xx-large;
+}
+
+#menu {
+    text-align: right;
+    background-color: rgb(231, 229, 229);
+    color: rgb(52, 52, 88);
+    text-decoration: none;
+    margin: 30px;
+    font-size: large;
+}
