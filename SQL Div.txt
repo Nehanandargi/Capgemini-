@@ -1,0 +1,7 @@
+CREATE or REPLACE procedure div(a number, b number) IS
+c number;
+BEGIN
+c:=a/b;
+a number:=10;
+b number:=2;
+END
