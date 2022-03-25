@@ -1,0 +1,32 @@
+Arrange the Employees in Alphabetical order. employee
+=> 	SELECT * FROM Employees order by lastname;
+
+Find  the highest seller product . orderdetails
+=> 	SELECT *,max(quantity) FROM orderdetails;
+
+What is the total revenue generated? products
+=> 	SELECT sum(price) as revenue FROM products;
+
+Display the ProductName where the price ranged from 50 to 100.products
+=> 	SELECT productname FROM products where price between 50 and 100;
+
+Find the list of countries from where we get the orders.Customers.
+=> 	SELECT  Customers.country FROM Orders 
+	INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID;
+
+Show case the Customer ID from Orders table where ProductID in the OrderDetails table is 77.
+=>	select * from orders where orderid in (select orderId from orderdetails where productid=77);
+
+Left and Inner join within Shippers and Orders.
+=>	SELECT  orders.customerid, orders.employeeid,shippers.shipperid FROM Orders
+	left JOIN shippers ON Orders.shipperID = shippers.shipperID;
+
+Left and Inner join within Orderdetails and Orders.
+=>	SELECT  orders.customerid, orders.employeeid,orderdetails.orderid FROM Orders
+	left JOIN orderdetails ON Orders.orderID = orderdetails.orderid;
+
+Find the product who sells above rs100 .from table Products
+=>	select productname,price from products where price>100;
+
+Find the productID for the product that sells the most from orderdetails.
+=>	select productid,max(quantity) from orderdetails; 
