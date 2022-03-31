@@ -1,0 +1,10 @@
+public class Java2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int empId=90;
+		int EMP_ID=100;
+		System.out.println(EMP_ID);
+	}
+
+}
