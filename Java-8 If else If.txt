@@ -1,0 +1,20 @@
+public class Java9 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int number=5;
+		if(number == 1) {
+			System.out.println("good");
+		}
+			else if(number==2) {
+			System.out.println("better");
+			}
+			else if(number==3) {
+			System.out.println("best");
+			}
+			else {
+			System.out.println("invalid");
+
+	}
+	}
+}

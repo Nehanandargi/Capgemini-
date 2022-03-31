@@ -1,0 +1,42 @@
+
+public class Java11 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int score = 91;
+	      String grade = null;
+	      
+	      switch(score/10) {
+	        // for score>= 90
+	        case 10:
+	        case 9:
+	           grade = "A";
+	           break;
+	        // for score>= 80 and <90
+	        case 8:
+	           grade = "B";
+	           break;
+	        // for score>= 70 and <80
+	        case 7:
+	           grade = "C";
+	           break;
+	        // for score>= 60 and <70
+	        case 6:
+	           grade = "D";
+	           break;
+	        // for score>= 50 and <60
+	        case 5:
+	           grade = "E";
+	           break;
+	        // for score< 50
+	        default:
+	           grade = "F";
+	           break;
+	      }
+	      
+	      // display result
+	      System.out.println("Grade = " + grade);
+
+	}
+
+}
