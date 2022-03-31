@@ -1,0 +1,41 @@
+Showcase the first name of employees in descending order.
+=>	select first_name from employees order by first_name desc;
+
+Select all fields from the employees table whose salary is less than or equal to $52,500
+=>	select * from employees where salary <= 52500;
+
+Select number of unique departments where at least one employee makes over $55,000 / year.
+=>	select distinct count(department) from employees where salary > 55000;
+
+Using Cursor Select the Common deptno In Emp and Dept Table
+=>	SET SERVEROUTPUT ON
+	DECLARE
+	   CURSOR c_emp IS SELECT DISTINCT department_id FROM employees;
+	cursor c_dept is select DISTINCT department_id from departments;
+	BEGIN
+	   FOR i IN c_emp
+	   LOOP
+	for j in c_dept
+	   loop
+	   if(i.department_id=j.department_id) then
+	      dbms_output.put_line(i.department_id);
+	end if;
+	end loop;
+	   END LOOP;
+	END;
+
+Create a function that takes department ID and returns the name of the manager of the department. 
+=>	CREATE or replace FUNCTION search_mng (dept_id NUMBER)  
+	RETURN VARCHAR2 is 
+	v_mng_name VARCHAR2(55);
+	BEGIN 
+	   SELECT first_name into v_mng_name FROM employees 
+		where employee_id=(select manager_id from departments where department_id=dept_id); 
+	   RETURN v_mng_name; 
+	END;
+
+    SET SERVEROUTPUT ON
+	DECLARE
+	BEGIN 
+   	dbms_output.put_line(search_mng(30)); 
+	END; 
